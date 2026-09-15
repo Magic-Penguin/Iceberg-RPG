@@ -1,42 +1,4 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frozen Frontier</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="sky-glow"></div>
-  <header class="nav">
-    <div class="brand"><span class="dot"></span> FROZEN FRONTIER</div>
-    <button id="exploreBtn" class="nav-btn">Enter the World</button>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">SURVIVAL RPG · PVP · PVE · FACTIONS</p>
-        <h1>Survive.<br><span>Fight.</span><br>Conquer.</h1>
-        <p class="intro">A frozen world where survival is earned. Choose your faction, forge your gear, face the wild, and decide who controls the frontier.</p>
-        <div class="actions"><button id="discoverBtn" class="primary">Enter the Frontier <span>→</span></button><a href="#journal" class="secondary">View the world</a></div>
-      </div>
-      <div class="penguin-stage">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="snow snow-one"></div><div class="snow snow-two"></div>
-        <img src="assets/CS110_Penguin_Card.png" alt="Penguin warrior" class="penguin">
-        <div class="location-card"><span>●</span> FRONTIER ZONE<br><small>CONTESTED TERRITORY</small></div>
-      </div>
-    </section>
-    <section id="journal" class="journal">
-      <div class="section-heading"><p class="eyebrow">THE FRONTIER</p><h2>Choose your<br><em>fight.</em></h2></div>
-      <div class="cards">
-        <article class="card"><span class="number">01 · SURVIVAL</span><h3>Endure</h3><p>Gather what you need, protect your camp, and stay alive when the frozen world turns against you.</p><button class="card-btn" data-message="Survival systems online. Keep your camp secure.">Enter →</button></article>
-        <article class="card featured"><span class="number">02 · COMBAT</span><h3>Clash</h3><p>Take up your blade. Fight hostile creatures in PvE or challenge rival players for control and resources.</p><button class="card-btn" data-message="Combat terminal ready. Rival activity detected.">Enter →</button></article>
-        <article class="card"><span class="number">03 · FACTIONS</span><h3>Conquer</h3><p>Stand with a faction, build its strength, defend its territory, and make your name matter across the frontier.</p><button class="card-btn" data-message="Faction network active. Choose where you stand.">Enter →</button></article>
-      </div>
-    </section>
-  </main>
-  <div id="toast" class="toast"></div>
-  <footer>FRONTIER STATUS: ACTIVE · SURVIVE WITH HONOR · TRUST NO ONE</footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Iceberg RPG — Frozen Frontier</title><link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></head>
+<body><div class="game"><div class="world"><div class="snow"></div><div class="iceberg i1"></div><div class="iceberg i2"></div><div class="iceberg i3"></div><div class="player" id="player"><div class="head"></div><div class="eye"></div><div class="beak"></div><div class="body"></div><div class="blade"></div><div class="nameplate"><span>YOU</span> · LV 01</div></div></div><header class="header"><div class="brand">ICEBERG RPG<small>FROZEN FRONTIER</small></div><div class="status"><span>WORLD <b>01</b></span><span>PLAYERS <b id="players">24</b></span><span>STATUS <b>ONLINE</b></span></div></header><aside class="map"><div class="label">FIELD MAP</div><h2>Whitewater</h2><div class="map-grid"><i class="m1"></i><i class="m2"></i><i class="m3"></i></div></aside><section class="hud"><div class="label">SURVIVOR STATUS</div><div class="bars"><div class="bar"><i id="health"></i></div><div class="bar"><i></i></div><div class="bar"><i></i></div></div><div class="hud-row"><span>HP 72 / 100</span><span>STAMINA 91</span><span>LVL 01</span></div></section><div class="actions"><button data-action="inventory">[ I ] INVENTORY</button><button data-action="factions">[ F ] FACTIONS</button><button data-action="combat">[ SPACE ] ATTACK</button></div><div class="prompt"><kbd>W A S D</kbd> MOVE <span>·</span> <kbd>SPACE</kbd> ATTACK <span>·</span> <kbd>E</kbd> INTERACT</div><div id="toast" class="toast"></div></div><script src="script.js"></script></body></html>
